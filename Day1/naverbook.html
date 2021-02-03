@@ -5,17 +5,26 @@
 </head>
     <body>
     <header>
-        <h1>
-            naver 책 e북 오디오북<textarea name="search" id="search" cols="10" rows="2" autofocus></textarea> 
-            <input type="submit" value=검색 > <input type="submit" value=통합검색 > 
-            <button>상세검색</button> 
-            <form action="https://nid.naver.com/nidlogin.login"> 
-            <input type="submit" value="로그인">
-            </form>
-        </h1> 
+        <h1>naver</h1> 
+        <h2>책 e북 오디오북</h2>
+            <textarea name="search" id="search" cols="10" rows="2" autofocus></textarea>
+            <button type="button">검색</button> 
+            <button type="button">통합검색</button> 
+            <button type="button">상세검색</button> 
+            <button type="button">로그인</button> 
     </header>   
     <div>
-        <h2>분야별 찾기  책 홈  베스트셀러  지서재 <form action="https://publisher.naver.com/"> <input type="submit" value="출판사 공간"></form></h2>
+        <h2>
+            분야별 찾기 <select name="book" >
+                <option value="novel">소설</option>
+                <option value="poem">시/에세이</option>
+                <option value="economy">경영/경제</option>
+                <option value="child">어린이</option>
+            </select> 
+                <a href="https://book.naver.com/index.nhn">책 홈</a> 
+                <a href="https://book.naver.com/bestsell/bestseller_list.nhn">베스트셀러</a> 
+                <a href="https://book.naver.com/bookshelf/index.nhn">지서재</a> 
+            </h2>
     </div>
     <div>
         책 홈 <select name="book">
@@ -25,10 +34,8 @@
             <option value="culture">문화</option>
         </select>
     </div>
-    <header>
-        <h1>보건교사 안은영(특별판)(양장본 HardCover)  정세랑 장편소설</h1>
-    </header>
-     <section>
+    <Article>
+        <h3>보건교사 안은영(특별판)(양장본 HardCover) 정세랑 장편소설</h3>
        <img src="http://www.artinsight.co.kr/data/news/2010/3551744270_YJBuvjnO_20201020050240_vnioapxw.png" width="300
        " >
         <p>
@@ -38,37 +45,50 @@
        <p>저자 정세랑  민음사  2020.08.11</p>
        <p>페이지 296  ISBN  9788937479953 </p>
        <p>
-           <input type="button" value="도서"> 
-           <h2>12600원 14000원 -10%</h2>
-        <form action="https://book.naver.com/bookdb/price.nhn?bid=16687560">
-        <input type="submit" value="구매혜택 상세보기>">
-        </form>
-        <button>@56</button>
-        <button>블로그</button>
-        <button>북마크</button>
-        <button>메모</button>
-        <button>공유하기</button>
+            <button type="button">도서</button>
+            <storng>12600원 14000원 -10%</strong>
+            <a href="https://book.naver.com/bookdb/price.nhn?bid=16687560">
+            <button type="button">구매혜택 상세보기</button>
+            </a>
+        <button type="button">@56</button>
+        <button type="button">블로그</button>
+        <button type="button">북마크</button>
+        <button type="button">메모</button>
+        <button type="button">공유하기</button>
     </p>
-    <h2>
-        바로구매
-    </h2>
-    <strong>
-     <p>예스24 n pay 1%</p>
-     <p>인터넷 교보문고 n pay 1%</p>
-     <p>알라딘 n pay 1%</p>
-     <p>인터파크 도서 n pay 6%</p>
-     <p>영풍문고 n pay 6%</p>
-     <p>반디앤루니스 n pay 6%</p>
-     <p>도서 11번가 n pay 6%</p>
-     <p>커넥츠북 n pay 6%</p>
-    </strong>
+    </Article>  
+    <h4>바로구매</h4>
+     <br>
+     <strong>예스24 n pay 1% 12600원</strong> 
+     <button type="button">구매</button>
+     <br>
+     <strong>인터넷 교보문고 n pay 1% 12600원</strong> 
+     <button type="button">구매</button>
+     <br>
+     <strong>알라딘 n pay 1% 12600원</strong> 
+     <button type="button">구매</button>
+     <br>
+     <strong>인터파크 도서 n pay 6% 12600원</strong> 
+     <button type="button">구매</button>
+     <br>
+     <strong>영풍문고 n pay 6% 12600원</strong> 
+     <button type="button">구매</button>
+     <br>
+     <strong>반디앤루니스 n pay 6% 12600원</strong> 
+     <button type="button">구매</button>
+     <br>
+     도서 11번가 <strong>12600원</strong> 
+     <button type="button">구매</button>
+     <br>
+     <strong>커넥츠북 n pay 6% 12600원</strong>
+     <button type="button">구매</button> 
     </section>
     <div>
-        <p> 책정보  출판사 서평  네티즌 리뷰  가격정보</p>
+        <h2>책정보  출판사 서평  네티즌 리뷰  가격정보</h2>
     </div>
-    <article>
+    <section>
         <p>
-            <h2>책 소개</h2>
+            <h4>책 소개</h4>
         </p>
         <p>본격학원 명랑 미스터리 소설 출간</p>
         <p>
@@ -76,31 +96,44 @@
         </p>
         <p>2015년 12월에 출간되어 꾸준한 사랑을 받아 온 [보건교사 안은영]이 출간 5주년과 작품 영상화를 기념하여 '리커버 특별판'으로 출간되었다. 2010년 단편소설에서 탄생한 '안은영'이 '넷플릭스 오리지널 시리즈'의 히어로가 되기까지의 소회가 담긴 작가의 편지로부터 책은 시작한다. 그 시간동안 안은영이 자신에게 좋은 친구가 되어 주었다는 정세랑의 고백은 아마 많은 독자에게도 마찬가지일 것이다.</p>
         <p>인터넷 교보문고 제공</p>
-    </article>
-    <article>
+    </section>
+    <section>
         <h2>저자 소개</h2>
         <p>
             <strong>정세랑</strong>
         </p>
-        <br>1984년 서울에서 태어났다. 2010년 [판타스틱]에 [드림,드림,드림]을 발표하며 작품활동을 시작했다. 2013년 [이만큼 가까이]로 창비장편소설상을, 2017년 [피프티 피플]로 한국일보문학상을 받았다. 소설집 [옥상에서 만나요], [목소리를 드릴게요] 등이 있다. 창비 장편소설상, 한국일보문학상을 수상했다.
+        1984년 서울에서 태어났다. 2010년 [판타스틱]에 [드림,드림,드림]을 발표하며 작품활동을 시작했다. 2013년 [이만큼 가까이]로 창비장편소설상을, 2017년 [피프티 피플]로 한국일보문학상을 받았다. 소설집 [옥상에서 만나요], [목소리를 드릴게요] 등이 있다. 창비 장편소설상, 한국일보문학상을 수상했다.
         <p>[예스24 제공]</p>
-    </article>
-    <article>
+    </section>
+    <section>
         <p>
-            <h2>저자의 다른 책</h2>
+            <h4>저자의 다른 책</h4>
         </p>
         <p>
-        <img src="https://img.ridicdn.net/cover/222002529/xxlarge" title="오늘의 sf#2" width="15%"> 오늘의 sf#2
-        <img src="http://image.yes24.com/goods/90524564/800x0" title="시선으로부터"  width="15%"> 시선으로부터
-        </p> 
-    </article>
-    <article>
-        <p>
-        <button>저자의 다른 책 더보기</button>
+            <img src="https://img.ridicdn.net/cover/222002529/xxlarge" title="오늘의 sf#2" width="15%"> 
         </p>
-    <article>
+        <br>오늘의 sf#2
+        <br> 2020.11
         <p>
-            <h2>목차</h2>
+            <img src="https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_700,q_80,w_490/v1597159628/sx1c74vmizdslcgekjop.jpg" title="언니밖에 없네" width="15%">
+        <br>언니밖에 없네
+        <br>2020.09
+        </p>
+        <p>
+            <img src="http://image.yes24.com/goods/90524564/800x0" title="시선으로부터"  width="15%"> 
+        </p>
+        <br>시선으로부터
+        <br>2020.06
+        <p>
+            <img src="http://image.kyobobook.co.kr/images/book/xlarge/587/x8809541533587.jpg" title="피프티 피플" width="15%">
+        </p>
+        <br>피프티 피플(티트라 에디션)(한정판)
+        <br>2020.04
+        <button type="button">저자의 다른 책 더보기</button>
+    </section>
+    <section>
+        <p>
+            <h4>목차</h4>
         </p>  
         <p>
              작가의 편지 5
@@ -109,9 +142,9 @@
             사랑해 젤리피시 13
             이하생략
         </p>
-        </article>
-        <article>
-        <h2>출판사 서평</h2>
+    </section>
+    <section>
+        <h4>출판사 서평</h4>
         <p>
              <strong>본격 학원 명랑 미스터리 소설의 탄생</strong>
              <br> 본문 이하 생략
@@ -128,38 +161,40 @@
             사람 친구만큼 책 친구가 필요하다고 여겨 왔습니다.
         </p>
         <p>
-        <button>출판사 서평 닫기</button>
+        <button type="button">출판사 서평 닫기</button>
         </p>
-        <p></p>
-    </article>
-    <article>
+    </section>
+    <section>
        <p>
-           <h2>네티즌 리뷰 (164건)</h2>
+           <h4>네티즌 리뷰 (164건)</h4>
        </p>
-       <p>
-        <a href="https://blog.naver.com/stom1124/222228094637">
+       <p>   
+            <a href="https://blog.naver.com/stom1124/222228094637">
             <u>보건교사 안은영 정세랑 장편소설</u>
         </a>
-       </p>    
-       <br>2021.02.01
+        <br>2021.02.01
+        <a href="https://blog.naver.com/stom1124/222228094637">https://blog.naver.com/stom1124/222228094637</a>  작성자명:stom1124 블로그명:마음정원84
+       </p> 
        <p>
         <a href="https://blog.naver.com/pamtol5/222107091567">
         <u>보건교사 안은영,정세랑,2015</u>
         </a>
+        <br>2021.02.01
+        <a href="https://blog.naver.com/pamtol5/222107091567">https://blog.naver.com/pamtol5/222107091567</a>작성자명:pamtol5 블로그명:케이로그
        </p>
-       <br>2021.02.01
        <p>
         <a href="https://blog.naver.com/chocotin3/222178242914">
         <u>보건교사 안은영 [정세랑]</u>
-        </a>   
+        </a>  
+        <br>2021.02.01 
+        <a href="https://blog.naver.com/chocotin3/222178242914">https://blog.naver.com/chocotin3/222178242914</a>작성자명:chocotin3 블로그명:인생은 아포가토
        </p>
-       <br>2021.02.01
        <p>
-           <button>네티즌 리뷰 더보기</button>
+           <button type="button">네티즌 리뷰 더보기></button>
        </p>
-    </article>
+    </section>
     <div>
-        <h2>이 책이 속한 분야</h2>
+        <h4>이 책이 속한 분야</h4>
         <br>
         <a href="https://book.naver.com/category/index.nhn?cate_code=100">소설
         </a>
@@ -172,10 +207,118 @@
         </a>    
     </div> 
     <div>
-        <h2>함께 읽은 책</h2>
+        <h4>함께 읽은 책</h4>
         <br>알라딘제공 알라딘 인터넷서점에서 이 책을 구입한 분들은 다음 책도 구입하셨습니다
-    달러구트 꿈 백화점  연년세세  시선으로부터 프리즘
-    </div>      
+        <p>
+            <img src="https://lh3.googleusercontent.com/proxy/EBpvrsDm44hb4Givy2sU4ik19peh-OpcAlLGRIoqEmpDl12VZbLeo7z0V3NXGmVUfZs6TEz-bEwqosbtG62q7SP_HcoXi_Nxy3gzQ1YN0FVrV62t" width="15%">
+            <br>
+            <u>달러구트 꿈 백화점
+            <br> (주문하신 꿈은...</u>
+            <br> 이미예
+        </p>
+        <p>
+            <img src="https://post-phinf.pstatic.net/MjAyMDA5MTFfODQg/MDAxNTk5ODAwMTMwNjcw.qr-fwS1iZ4GUZ6_eu8PVrYNHAtwxrmE2QoBm7bcl0O8g.fDa7MaZar6gUb89GakI0xG0vA4jF5kvnmhrkhVbAkA8g.JPEG/%EC%97%B0%EB%85%84%EC%84%B8%EC%84%B8_%EC%9E%85%EC%B2%B4.jpg?type=w1200"   width="15%">  
+            <u>연년세세 (황정은 연
+            <br>작소설)
+            </u>
+            <br> 황정은
+        </p>
+        <p>
+            <img src="http://image.yes24.com/goods/90524564/800x0" width="15%"> 
+            <u>시선으로부터 (정세
+            <br>랑 장편소설)
+            </u>
+            <br>정세랑
+        </p>
+        <p>
+            <img src="https://post-phinf.pstatic.net/MjAyMDA4MjVfODQg/MDAxNTk4MzM5MTQyNTI3.yWLp_0IFS7IQMqFczIN5hkMIUFXn2znxW_LP1mqBwhMg.opF7Z4W_2GdJ87UFto1GlG7gjBqGwa7pCOxIa4MncSwg.JPEG/%ED%94%84%EB%A6%AC%EC%A6%98_%ED%91%9C%EC%A7%80_%EC%9C%A4%EC%8A%AC%EC%B2%B4%ED%99%95%EC%A0%95_%EB%9D%A0%EC%A7%80%EC%97%86%EC%9D%8C.jpg?type=w1200" width="15%"> 
+            <u>프리즘 (손원평 장편
+            <br>소설)
+            </u>
+            <br>손원평
+        </p>
+    <div>
+        <p>
+            <ul>
+            <br>지금 보시는 책 정보에 추가, 수정, 삭제가 필요하면 책 고객센터에 남겨주세요. <button type="button">잘못된 책정보 신고하기</button>
+            <br>이 책의 출판사는 출판사 페이지에서 직접 책 정보를 관리할 수 있습니다.<button type="button">출판사 공간가기</button>
+            </ul>
+        </p>
+    </div>  
+    <aside>
+        <img src="https://bookimg.pstatic.net/admin/upload_2/202101/03_2_273x100.jpg" width="30%">
+    </aside> 
+    <section>
+        <h4>출판사 추천 도서</h4>
+        <p>
+            <br>색채가 없는 다자키 쓰쿠루와 그가 순례를 떠난 해
+            <br>무라카미 하루키
+        </p> 
+        <p>
+            <br>자기 절제 사회
+            <br>대니얼 엑스트
+        </p>  
+        <p>  
+            <br>해럴드 프라이의 놀라운 순례
+            <br>레이철 조이스   
+        </p>
+        <p>
+            <br>인비저블
+            <br>데이비드 즈와이그
+        </p>
+        <p>
+            <br>노르웨이의 숲
+            <br>무라카미 하루키
+        </p>    
+        <p>
+            <button type="button">
+            <u>더보기</u>
+            </button>
+        </p>
+    </section>
+    <section>
+        <h4>같은 분야의 인기책</h4>
+        <p>
+            <br>82년생 김지영
+            <br>조남주
+            <br> 
+            <strong>8.33</strong>
+        </p>
+        <p>
+            <br>빨강 머리 앤
+                <br>루시 모드 몽고메리
+                <br>
+                <strong>9.8</strong>
+        </p>       
+        <p>
+            <br>돌이킬 수 없는 약속
+                <br>야쿠마루 가쿠
+                <br>
+                <strong>7.6</strong>
+            </p>
+            <p>
+                <button type="button">
+                <u> 더보기</u>
+                </button>
+            </p>
+    </section>
+    <section>
+        <h4>같은 분야의 신간도서</h4>
+        <p> <br>피터팬
+            <br>제임스 매튜 배리
+        </p>
+        <p>
+            <br>팔려 온 신부1
+                <br>이여운
+        </p>        
+        <p> <br>팔려 온 신부2
+                <br>이여운
+        </p>
+            <p>
+                <button type="button">
+                <u> 더보기</u>
+                </button>
+            </p>
+        </section>
 </body>
-</head>
 </html>
