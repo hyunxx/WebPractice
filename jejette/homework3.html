@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style>
+            .test2{
+                border:1px red solid; 
+                width:500px; height: 500px;
+                position:relative;
+                top:50%; left:50%;
+                margin-top: -250px; margin-left: -250px;
+                }
+            .test_fix{border:1px solid black;  
+                    width:100px; height:100px; 
+                    text-align:center;
+                    position:fixed; 
+                    margin-top:400px; margin-left:-101px;
+                }
+            .test_absolute{border:1px solid black; 
+                        width:100px; height:100px; 
+                        text-align: center;
+                    }
+            .test_relative{border:1px solid black;
+                    width:100px; height:100px; 
+                    text-align: center;
+                }
+            .test_static{border:1px solid black;
+                 width:100px; height:100px; 
+                 text-align: center;
+                }
+        </style>
+    </head>
+<body>
+    <div class="test2">
+        <div class="test_fix">fix</div>
+        <div class="test_absolute">absolute</div>
+        <div class="test_relative">relative</div>
+        <div class="test_static">static</div>
+    </div>
+</body>
+</html>

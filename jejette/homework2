@@ -1,0 +1,13 @@
+마진 패딩을 넣는 네가지 방법 외우기
+        margin: 10px 20px 30px 50px 
+        margin: 10px 20px 50px;
+        margin: 10px 20px;
+        margin: 10px;
+        margin: 10px auto;
+        padding: 10px 20px 30px 50px 
+        padding: 10px 20px 50px;
+        padding: 10px 20px;
+        padding: 10px
+
+각각 위부터 시계방향으로 적는 것이 원칙
+

@@ -1,0 +1,32 @@
+3.가상 선택자:after 사용하기
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style>
+            .song:after{ content:""; clear:both;display:block;}
+            .other_song{float: left;}
+            .lylics{float: right;}
+        </style>
+    </head>
+<body>
+    <div class="song">
+        <h1>우리들의 여름을 회상하며</h1>
+        <div class="other_song">
+            other song
+            <ul>
+                <li>spuare</li>
+                <li>시퍼런 봄</li>
+                <li>로마네스크</li>
+            </ul>
+        </div>
+        <div class="lylics">
+            Our eyes are closed
+            but we know when the sun is near us
+            we'll be in love forever
+            My doors were ripped it out somehow
+            but now it's constantly  fixed by you
+            I hate to admit it
+        </div>
+    </div>
+</body>
+</html>
