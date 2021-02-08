@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style>
+        .container{
+            display: flex;
+            flex-direction: column;
+            }
+        header{
+            border-bottom:1px solid gray;
+            padding-left: 20px;
+        }
+        footer{
+            border-top: 1px solid gray;
+        }
+        .content{display: flex;}
+        .content nav{
+            border-right: 1px solid gray;
+        }
+        .content aside{
+            border-left: 1px solid gray;
+        }
+        nav, aside{
+            flex-basis:200px;
+        }
+        main{
+            flex-shrink: 0;
+            padding: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>holygraillayout</h1>
+        </header>
+            <section class="content">
+                <nav>
+                    <ul>
+                        <li>boxmodel</li>
+                        <li>flex</li>
+                        <li>layout</li>
+                    </ul>
+                </nav>  
+                <main>
+                   holygraillayout 은 layout을 위한 도구입니다 
+                </main>
+                <aside>광고입니다</aside>
+            </section>
+            <footer>
+                <a href="https://www.inflearn.com/course/css-%EA%B8%B0%EB%B3%B8%EB%B6%80%ED%84%B0-%ED%99%9C%EC%9A%A9%EA%B9%8C%EC%A7%80/lecture/4503?tab=note">
+                </a> 
+            </footer>
+    </div>
+</body>
+</html>
