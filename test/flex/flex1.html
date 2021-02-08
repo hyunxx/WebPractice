@@ -1,0 +1,28 @@
+<html>
+<head>
+    <style>
+        .class{
+            background-color: powderblue;
+            display:flex;
+            }
+        .item{
+            background-color: tomato;
+            color:white;
+            border:1px solid white;
+            /*flex-grow: 1;*/
+        }
+        .item:nth-child(2){
+            flex-shrink: 0 ;
+        }
+    </style>
+</head>
+<body>
+    <div class="class">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<html>
+<head>
+    <style>
+        .test2 {
+	position: relative;
+	border: 1px solid red;
+    width: 500px;
+    height: 300px;
+    margin:0 auto; 
+    /* */ 
+    }
+    .test2 div {
+    
+	width: 100px;
+	height: 100px;
+	background: #ddd;
+}
+    .test2 .test_fix {
+	position: fixed;
+    margin-left:-100px;
+    margin-top: 200px;
+	border: 1px solid blue;
+	z-index: 2;
+}
+    .test2 .test_absolute {
+	position: absolute;
+	right: -50px;
+	top: 30px;
+	border: 1px solid pink;
+	z-index: 1;
+}
+    .test2 .test_relative {
+	position: relative;
+	background: #aaa;
+	z-index: 2;
+}
+    .test2 .test_static {
+	position: static;
+	background: green;
+	z-index: 1;
+}
+    </style>
+</head>
+<body>
+<div class="test2">
+    <div class="test_fix">fix</div>
+    <div class="test_absolute">absolute</div>
+    <div class="test_relative">relative</div>
+    <div class="test_static">static</div>
+</div>
+</body>
+</html>
