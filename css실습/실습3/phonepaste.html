@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" name="viewport" conten="width=device-width,
+    initial-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title></title>
+    <style>
+        * { margin:0; padding:0;}
+        /*web font 배열해서 넣기*/
+        li{list-style: none;}
+        a{ text-decoration: none;}
+
+        #main_header{
+            height:45px;
+            background-color: green;
+            position:relative;
+            text-align: center;
+            line-height: 45px;
+        }
+
+        #main_header > h1{
+            color:white;
+        }
+
+        #main_header > a, #main_header label{
+            display:block;
+            height:32px;
+            position:absolute;
+            overflow: hidden;
+        }
+        #main_header > a.left {
+            color:white;
+            font-weight: bold;
+        }
+        #main_header > label.right {
+            color:white;
+            font-weight: bold;
+            width:64px;
+            /*float:right;*/
+            right:10px; 
+            top:0;
+        }
+        #toggle {
+            display:none;
+        }
+        #gnb_wrap {
+            display:none;
+            border:10px solid black;
+        }
+        #toggle:checked ~
+        #wrap> #gnb_wrap {
+            display:block;
+        }
+        #gnb ul {
+            background-color: white ;
+            overflow: hidden;
+        }
+        #gnb ul li{
+            float:left;
+            margin:10px 20px;
+            padding:0;
+            padding-right: 40px;
+            text-align: center;
+            font-size:1.1em;
+            border:1px solid #cccccc;
+            box-sizing:border-box ;
+        }
+        #lnb{
+            height: 60px;
+            background-color: cornflowerblue;
+        }
+        #lnb ul {overflow:hidden;}
+        #lnb ul li {
+            float:left;
+            width:20%;
+            height:60px;
+            line-height: 60px;
+            color:white;
+            font-weight: bold;
+            font-size: 1.2em;
+            text-align:center;
+            border: 1px solid #cccccc;
+            box-sizing: border-box;
+        }
+        #footer {
+            padding:10px;
+        }
+
+        #footer .logo {
+            border-top:1px solid #5e5e5e;
+            border-bottom:1px solid #5e5e5e;
+            padding:10px 0;
+            text-align:center;
+        }
+
+        #footer .info {
+            padding-top:10px;
+            font-size:1.3em; font-weight:bold;
+            text-align:center;
+        }
+
+        #footer .addr { text-align:center; color:#515151; font-size:.9em; }
+    </style>
+</head>
+<body>
+    <input id="toggle" type="checkbox"/>
+    <div id="wrap">
+        <header id="main_header">
+            <a class="left" href="#none">
+                category
+            </a>
+            <h1>Mobile</h1>
+            <label class="right" for="toggle" onclick=""> menu</label>
+        </header>
+    </div>
+        <div id="gnb_wrap">
+            <div id="gnb">
+                <ul>
+                    <li><a href="#none">gnb1</a></li>
+                    <li><a href="#none">gnb2</a></li>
+                    <li><a href="#none">gnb3</a></li>
+                    <li><a href="#none">gnb4</a></li>
+                    <li><a href="#none">gnb5</a></li>
+                    <li><a href="#none">gnb6</a></li>
+                    <li><a href="#none">gnb7</a></li>
+                    <li><a href="#none">gnb8</a></li>
+                </ul>
+            </div>
+        </div> 
+            <div id="lnb_wrap">
+                <div id="lnb">
+                    <ul>
+                        <li><a href="#none">lnb1</a></li>
+                        <li><a href="#none">lnb2</a></li>
+                        <li><a href="#none">lnb3</a></li>
+                        <li><a href="#none">lnb4</a></li>
+                        <li><a href="#none">lnb5</a></li>
+                    </ul>
+                </div>
+        </div>
+        <footer id="footer">
+            <div class="logo"><img src="http://www.sba.seoul.kr/kr/images/footer/f_logo.png"></div>
+            <div class="info">서울산업진흥원</div>
+            <div class="addr">121-904 서울 마포구 월드컵북로 400(상암동)</div>
+        </footer>
+</body>
+</html>
