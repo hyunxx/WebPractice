@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style>
+        header,img,ul,li,button,section,h1,div,p,br,article,footer,body {
+        margin: 0;
+	    padding: 0;
+	    border: 0;
+	    font-size: 100%;
+	    font: inherit;
+	    vertical-align: baseline;
+        }
+        a {text-decoration: none;
+            color: black;}
+        ul {list-style: none;}
+        header {
+            width:100%;
+            height: 70px;
+            position: fixed;
+            background-color: white;
+            border: 1px solid gray;
+            overflow: hidden;
+            margin:0 auto;
+        
+        }
+        
+        header div {
+            line-height: 70px;
+            margin:0 auto;
+            color: black;
+            float: left;
+            font-size: 1.1em;
+        }
+        h1 {
+            line-height: 70px;
+            margin-left:20px;
+            font-size: 1.3em;
+            font-weight: bold;
+            color:rgb(0, 0, 61);
+            
+        }
+        header button {
+            line-height: 70px;
+            float: right;
+            background-color: white;
+        }
+        .bus {
+            width:150px;
+            margin:0 10px;
+            background-color: gray;
+            color:white;
+        }
+        .visual {
+            width:100%;
+            height:380px;
+            border: 1px solid blue;
+            overflow:hidden;
+            box-sizing: border-box;
+            margin-bottom: 70px;
+        }
+        .visual .center {
+            text-align: center;
+            margin-top:190px;
+        }
+        .visual .lnb {
+            float: left;
+            width: 100%;
+            height: 60px;
+            border-top: 1px solid black;
+            margin-top: 60px;
+        }
+        .visual .home {
+            margin-left: 40px;
+        }
+        .info {
+            width: 1100px;
+            height: 60px;
+            overflow:hidden;
+            margin: 0 auto;
+            border:1px solid black;
+            text-align: center;
+            line-height: 60px;
+            margin-bottom: 50px;
+        }
+        .info .chairman {
+            float: left;
+            width: 50%;
+            height: 60px;
+            border-right: 1px solid black;
+            color: white;
+            font-style: bold;
+            background-color: blue;
+            
+        }
+        .image {
+            width: 1100px;
+            margin: 0 auto 70px;
+            }
+        .wrap {
+            overflow:hidden;
+            width: 1100px;
+            height: 350px; 
+            margin: 0 auto 80px;
+        }
+        .wrap .left {
+            float:left;
+        }
+        .first {
+            font-size: 1.4em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .name {
+            float: right;
+            margin-right: 5px;
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+        .bottom {
+            width: 100%;
+            height: 200px;
+            border: 1px solid black;
+            overflow: hidden;
+            box-sizing: border-box;
+            line-height: 200px ;
+            
+        }
+        .bottom button {
+            background-color: white;
+        }
+        .bottom .video {
+            float: left;
+            width: 50%;
+            height: 200px;
+            border-right: 1px solid black;
+            text-align: right;
+            padding-right: 20px;
+        }
+        .bottom .print {
+            padding-left: 20px;
+        }
+        footer {
+            width: 100%;
+            height: 180px;
+            border: 1px solid black; 
+            overflow: hidden;
+
+        }
+        footer .last {
+            width: 1000px;
+            margin: 0 auto;
+        }
+        footer >.last>div {
+            float:left;
+            margin: 20px 10px;
+            }
+        footer button {
+            background-color: white;
+        }
+        footer .box {
+            border: 1px solid grey;
+            height: 70px;
+            padding: 10px;
+        }
+        footer .copyright {
+            display: block;
+        }
+        
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="wrap">
+        <h1>동국제강</h1>
+        <div class="one">회사소개</div>
+        <div class="two">제품</div>
+        <div class="three">투자정보</div>
+        <div class="four">지속가능경영</div>
+        <div class="five">인재경영</div>
+        <div class="six">홍보센터</div>
+        </div>
+        <button type="button" class="bus">BUSINESS</button>
+        <button type="button" class="eng">ENG</button>
+    </header>
+    <section class="visual">
+        <div class="center">
+            <h2>CEO</h2>
+        </div>
+        <nav class="lnb">
+        <div class="home">
+            Home
+        </div>
+        <div class="business">
+            회사소개
+        </div>
+        <div class="ceo">
+            CEO
+        </div>
+        </nav>
+    </section>
+    <section class="info">
+        <div class="chairman">
+            장세주 회장
+        </div>
+        <div class="a_vice_chairman">
+            <a href="http://www.dongkuk.com/ko/company/ceo2">
+            장세욱 부회장
+            </a>
+        </div>
+    </section>
+    <section class="image">
+         <img src="http://www.dongkuk.com/assets/ko/images/company/ceo1.jpg">
+    </section>
+    <div class="wrap">
+    <section class="left">
+        <p class="first">
+            지난 66년간 동국제강은 민간 최초 철강기업으로서
+            <br> 국가산업의 근본이 된다는 자부심으로
+            <br> 철강종가의 명맥을 지켜왔습니다.
+        </p>
+        <p class="second">
+            국토 재건에 필수적이었던 와이어로드의 국내 최초 생산을 시작으로 민간 최초 
+            <br>고로를 가동했습니다. 이어 선제적인 기술투자로 전기로 시대를 여는 주역이
+            <br> 되었고 최초의 냉간압연강판, 후판, 전기아연도금강판, 컬러강판을 생산했습니다.
+        </p>
+    </section>
+    <section class="right">
+        <p class="third">
+            이처럼 수많은 '처음'을 만들었던 것은 업에 대한 열정과 실패를 두려워하지 않는 도전
+            <br> 정신이 있었기 때문입니다. 부산 용호동 앞바다를 메웠던 열정은 전세계로 뻗어나가며
+            <br> 브라질 CSP 제철소의 도전으로 확장되고 있습니다.
+        </p>
+        <p class="fourth">
+            지금까지의 역사가 그랬듯 동국제강은 앞으로도 최고의 '퍼스트 무버'로서 나아갈
+            <br> 것입니다. 66년의 저력을 믿고 현재의 지혜를 모으며 100년의 앞을 보겠습니다.
+        </p>
+        <div class="name">
+        동국제강 회장 장세주
+        </div>
+    </section>
+    </div>
+    <article class="bottom">
+        <div class="video">
+            <a href="http://www.dongkuk.com/ko/pr/pr_video">
+            <button type="button"> < </button>
+            영상
+            </a>
+        </div>
+        <div class="print">
+            <a href="http://www.dongkuk.com/ko/pr/print">
+                브로슈어
+            <button type="button"> > </button>
+            </a>
+        </div>
+    </article>
+    <footer>
+        <h4>동국제강</h4>
+        <div>이용약관</div>
+        <div>개인정보처리방침</div>
+        <div>이메일무단수집거부</div>
+        <div>사이트맵</div>
+        <button type="button" class="insta">
+            insta
+        </button>
+        <button type="button" class="facebook">
+            facebook
+        </button>
+        <button type="button" class="youtube">
+            youtube
+        </button>
+        <button type="button" class="blog">
+            blog
+        </button>
+        <div class="box">
+            <button type="button" class="">
+                동반성장
+            </button>
+            <button type="button" class="">
+                패밀리 사이트
+            </button>
+        </div>
+        <div class="adress">
+            서울 특별시 중구 을지로 5길 19 페럼타워, TEL 02 317 1114
+        </div>
+        <div class="COPYRIGHT">
+            COPYRIGHT@2019 DONGKUKSTEEL MILL CO., LTD ALL RIGHTS RESERVED.
+        </div>
+    </footer>
+</body>
+</html>
