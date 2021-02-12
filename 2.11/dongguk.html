@@ -15,35 +15,36 @@
             color: black;}
         ul {list-style: none;}
         header {
-            width:100%;
+            width: 100%;
             height: 70px;
             position: fixed;
-            background-color: white;
-            border: 1px solid gray;
-            overflow: hidden;
-            margin:0 auto;
-        
-        }
-        
-        header div {
+            font-size: 20px;
+            border: 1px solid black;
+            padding:5px;
             line-height: 70px;
-            margin:0 auto;
-            color: black;
-            float: left;
-            font-size: 1.1em;
         }
-        h1 {
-            line-height: 70px;
-            margin-left:20px;
-            font-size: 1.3em;
+        h1 { 
             font-weight: bold;
-            color:rgb(0, 0, 61);
-            
+            float: left;
+            margin: 0 500px 0 50px;
+            }
+        header div {
+            margin: 0 auto;
+            float: left;
+            margin-right: 20px;
         }
         header button {
-            line-height: 70px;
-            float: right;
+            float:right;
             background-color: white;
+        }
+        header .bus {
+            background-color: gray;
+            width: 150px;
+            margin: 0 20px;
+        }
+        header .eng {
+            font-size: 0.9em;
+            color: grey;
         }
         .bus {
             width:150px;
@@ -51,27 +52,42 @@
             background-color: gray;
             color:white;
         }
-        .visual {
-            width:100%;
-            height:380px;
-            border: 1px solid blue;
-            overflow:hidden;
-            box-sizing: border-box;
-            margin-bottom: 70px;
-        }
-        .visual .center {
-            text-align: center;
-            margin-top:190px;
-        }
-        .visual .lnb {
-            float: left;
+        .nav_wrap {
             width: 100%;
-            height: 60px;
-            border-top: 1px solid black;
-            margin-top: 60px;
+            height: 380px;
+            border: 1px solid black;
+            box-sizing: border-box;
+            margin-bottom: 35px;
         }
-        .visual .home {
-            margin-left: 40px;
+        .nav_wrap .nav_one {
+            text-align: center;
+            margin: 180px 0 0 0;
+        }
+        .nav_wrap .nav_two {
+            width: 100%;
+            height: 80px;
+            overflow: hidden;
+            border: 1px solid black;
+            box-sizing: border-box;
+            position: absolute;
+            top: 300px;
+
+        }
+        .nav_wrap .nav_two div {
+            width: 100px;
+            height: 100px;
+            border-right: 1px solid black;
+            text-align: center;
+            display: inline-block
+        }
+        .nav_two .home {
+             padding: 10px;
+             margin: 0 0 0 100px;
+             border-left: 1px solid black;   
+        }
+        .nav_two .introduce, .name {
+            margin:0;
+            padding-right: 60px;
         }
         .info {
             width: 1100px;
@@ -111,7 +127,7 @@
             font-weight: bold;
             margin-bottom: 10px;
         }
-        .name {
+        .right .name {
             float: right;
             margin-right: 5px;
             font-size: 1.1em;
@@ -134,38 +150,50 @@
             width: 50%;
             height: 200px;
             border-right: 1px solid black;
+            margin-right: 20px;
             text-align: right;
             padding-right: 20px;
-        }
-        .bottom .print {
-            padding-left: 20px;
         }
         footer {
             width: 100%;
             height: 180px;
-            border: 1px solid black; 
+            background-color: rgb(56, 55, 55);
+        }
+        footer .one {
             overflow: hidden;
-
+            width:1000px;
+            margin: 0 auto 20px; 
         }
-        footer .last {
-            width: 1000px;
-            margin: 0 auto;
-        }
-        footer >.last>div {
+        footer .one div {
             float:left;
-            margin: 20px 10px;
-            }
-        footer button {
-            background-color: white;
+            margin: 10px 10px 10px 0;
         }
-        footer .box {
-            border: 1px solid grey;
-            height: 70px;
+        footer .logo {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: white;
+        }
+        
+        footer .info, .sns, .button {
+            color:rgb(207, 204, 204);
+        }
+        footer .sns {
+            margin-right: 5px;
+        }
+        footer .button {
+            background-color: rgb(56, 55, 55); 
+            border:1px solid rgb(207, 204, 204);
             padding: 10px;
         }
-        footer .copyright {
-            display: block;
+        footer .button .a {
+            border-right: 1px solid rgb(207, 204, 204);
+
         }
+        footer .two {
+            color: rgb(207, 204, 204);
+            margin-left: 450px;
+        }
+       
         
 
 
@@ -174,33 +202,36 @@
 </head>
 <body>
     <header>
-        <div class="wrap">
-        <h1>동국제강</h1>
-        <div class="one">회사소개</div>
-        <div class="two">제품</div>
-        <div class="three">투자정보</div>
-        <div class="four">지속가능경영</div>
-        <div class="five">인재경영</div>
-        <div class="six">홍보센터</div>
-        </div>
-        <button type="button" class="bus">BUSINESS</button>
-        <button type="button" class="eng">ENG</button>
-    </header>
-    <section class="visual">
-        <div class="center">
-            <h2>CEO</h2>
-        </div>
-        <nav class="lnb">
-        <div class="home">
-            Home
-        </div>
-        <div class="business">
-            회사소개
-        </div>
-        <div class="ceo">
-            CEO
-        </div>
+        <nav class="gnb">
+            <h1>동국제강</h1>
+            <div class="one">회사소개</div>
+            <div class="two">제품</div>
+            <div class="three">투자정보</div>
+            <div class="four">지속가능경영</div>
+            <div class="five">인재경영</div>
+            <div class="six">홍보센터</div>
+            <button type="button" class="bus">BUSINESS</button>
+            <button type="button" class="eng">eng</button>
         </nav>
+    </header>
+    <div class="nav_wrap">
+        <div class="nav_one">
+            <h2>CEO</h2>
+            <P>CEO</P>
+        </div>
+        <div class="nav_two">
+            <div class="home">
+                home
+            </div>
+            <div class="introduce">
+                회사 소개
+            </div>
+            <div class="name">
+                CEO
+            </div>
+        </div>
+    </div>
+
     </section>
     <section class="info">
         <div class="chairman">
@@ -258,36 +289,54 @@
         </div>
     </article>
     <footer>
-        <h4>동국제강</h4>
-        <div>이용약관</div>
-        <div>개인정보처리방침</div>
-        <div>이메일무단수집거부</div>
-        <div>사이트맵</div>
-        <button type="button" class="insta">
-            insta
-        </button>
-        <button type="button" class="facebook">
-            facebook
-        </button>
-        <button type="button" class="youtube">
-            youtube
-        </button>
-        <button type="button" class="blog">
-            blog
-        </button>
-        <div class="box">
-            <button type="button" class="">
+        <div class="one">
+            <div class="logo">
+                동국제강
+            </div>
+            <div class="info">
+                <div class="aa">
+                    이용약관
+                </div>
+                <div class="bb">
+                    개인정보처리방침
+                </div>
+                <div class="cc">
+                    이메일무단수집거부
+                </div>
+                <div class="dd">
+                    사이트맵
+                </div>
+            </div>
+            <div class="sns">
+                <div class="insta">
+                    insta
+                </div>
+                <div class="facebook">
+                    facebook
+                </div>
+                <div class="youtube">
+                    youtube
+                </div>
+                <div class="blog">
+                    blog
+                </div>
+            </div>
+            <div class="button">
+            <button type="button" class="a">
                 동반성장
             </button>
-            <button type="button" class="">
-                패밀리 사이트
+            <button type="button" class="b">
+                패밀리사이트
             </button>
         </div>
-        <div class="adress">
-            서울 특별시 중구 을지로 5길 19 페럼타워, TEL 02 317 1114
         </div>
-        <div class="COPYRIGHT">
-            COPYRIGHT@2019 DONGKUKSTEEL MILL CO., LTD ALL RIGHTS RESERVED.
+        <div class="two">
+            <div class="adress">
+                서울 특별시 중구 을지로 5길 19 페럼타워, TEL 02 317 1114
+            </div>
+            <div class="copyright">
+                COPYRIGHT@2019 DONGKUKSTEEL MILL CO.,LTD ALL RIGHTS RESERVED.
+            </div>
         </div>
     </footer>
 </body>

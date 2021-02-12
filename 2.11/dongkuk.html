@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
+<!-- saved from url=(0050)file:///C:/Workspace/WebPractice/2.11/dongkuk.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
     <style>
         header,img,ul,li,button,section,h1,div,p,br,article,footer,body {
             margin: 0;
@@ -11,17 +11,20 @@
             font: inherit;
             vertical-align: baseline;
         }
+        
         header {
             width: 100%;
             height: 70px;
             position: fixed;
             font-size: 20px;
             border: 1px solid black;
+            padding:5px;
             line-height: 70px;
         }
         h1 { 
             font-weight: bold;
             float: left;
+            margin-right: 500px;
             }
         header div {
             margin: 0 auto;
@@ -41,33 +44,48 @@
             font-size: 0.9em;
             color: grey;
         }
-        .title {
-            width:100%;
+        .nav_wrap {
+            width: 100%;
             height: 380px;
+            border: 1px solid black;
+            box-sizing: border-box;
+            margin-bottom: 35px;
+        }
+        .nav_wrap .nav_one {
+            text-align: center;
+            margin: 180px 0 0 0;
+        }
+        .nav_wrap .nav_two {
+            width: 100%;
+            height: 80px;
             overflow: hidden;
             border: 1px solid black;
-            }
-        .title .newsroom  {
-            line-height: 380px;
-            text-align: center;
-            }
-        .lnb {
-            border-top: 1px solid black;
-            width:100%; 
-            float: left;
-            border-left: 1px solid black;
-            }
-        .lnb .home {
-            margin-left: 400px;
-            }
-        .lnb .room {
+            box-sizing: border-box;
+            position: absolute;
+            top: 300px;
+
+        }
+        .nav_wrap .nav_two div {
+            width: 100px;
+            height: 100px;
             border-right: 1px solid black;
-            }
+            text-align: center;
+            display: inline-block
+        }
+        .nav_two .home {
+             padding: 10px;
+             margin: 0 0 0 100px;
+             border-left: 1px solid black;   
+        }
+        .nav_two .introduce, .name {
+            margin:0;
+            padding-right: 60px;
+        }
         .nav {
             overflow: hidden;
             width: 1000px;
             height:200px;
-            margin: 0 auto ;
+            margin: 0 auto;
             border-bottom: 1px solid black;
         }
         .nav div {
@@ -111,9 +129,8 @@
             margin-right:30px;
         }
         .pluss {
-            width: 100%;
+            width: 1000px;
             margin: 0 auto;
-
         }
         .plus {
             width: 200px;
@@ -137,37 +154,48 @@
             width: 50%;
             height: 200px;
             border-right: 1px solid black;
+            margin-right: 20px;
             text-align: right;
             padding-right: 20px;
-        }
-        .bottom .right {
-            padding-left: 20px;
         }
         footer {
             width: 100%;
             height: 180px;
-            border: 1px solid black; 
+            background-color: rgb(56, 55, 55);
+        }
+        footer .one {
             overflow: hidden;
-
+            width:1000px;
+            margin: 0 auto 20px; 
         }
-        footer .last {
-            width: 1000px;
-            margin: 0 auto;
-        }
-        footer >.last>div {
+        footer .one div {
             float:left;
-            margin: 20px 10px;
-            }
-        footer button {
-            background-color: white;
+            margin: 10px 10px 10px 0;
         }
-        footer .box {
-            border: 1px solid grey;
-            height: 70px;
+        footer .logo {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: white;
+        }
+        
+        footer .info, .sns, .button {
+            color:rgb(207, 204, 204);
+        }
+        footer .sns {
+            margin-right: 5px;
+        }
+        footer .button {
+            background-color: rgb(56, 55, 55); 
+            border:1px solid rgb(207, 204, 204);
             padding: 10px;
         }
-        footer .copyright {
-            display: block;
+        footer .button .a {
+            border-right: 1px solid rgb(207, 204, 204);
+
+        }
+        footer .two {
+            color: rgb(207, 204, 204);
+            margin-left: 450px;
         }
         
 
@@ -175,32 +203,35 @@
 </head>
 <body>
     <header>
-        <h1>동국제강</h1>
-        <div class="one">회사소개</div>
-        <div class="two">제품</div>
-        <div class="three">투자정보</div>
-        <div class="four">지속가능경영</div>
-        <div class="five">인재경영</div>
-        <div class="six">홍보센터</div>
-        <button type="button" class="bus">BUSINESS</button>
-        <button type="button" class="eng">eng</button>
+        <nav class="gnb">
+            <h1>동국제강</h1>
+            <div class="one">회사소개</div>
+            <div class="two">제품</div>
+            <div class="three">투자정보</div>
+            <div class="four">지속가능경영</div>
+            <div class="five">인재경영</div>
+            <div class="six">홍보센터</div>
+            <button type="button" class="bus">BUSINESS</button>
+            <button type="button" class="eng">eng</button>
+        </nav>
     </header>
-    <article class="title">
-        <div class="newsroom">
-            뉴스룸
+    <div class="nav_wrap">
+        <div class="nav_one">
+            <h2>CEO</h2>
+            <P>CEO</P>
         </div>
-        <nav class="lnb">
+        <div class="nav_two">
             <div class="home">
                 home
             </div>
-            <div class="publicity">
-                홍보센터
+            <div class="introduce">
+                회사 소개
             </div>
-            <div class="room">
-                뉴스룸
+            <div class="name">
+                CEO
             </div>
-        </nav>
-    </article>
+        </div>
+    </div>
     <section class="nav">
         <div class="ligature">
         <div class="all">전체보기</div>
@@ -224,50 +255,64 @@
     </div>
     <article class="bottom">
         <div class="left">
-        <button type="button" > < </button>
-        <button type="button" > 기업소개 </button>
+        <button type="button"> &lt; </button>
+        <button type="button"> 기업소개 </button>
         </div>
         <div class="right">
             <button type="button" class="text2"> 제품전체보기 </button>
-            <button type="button" class="r_arrow"> > </button>
+            <button type="button" class="r_arrow"> &gt; </button>
             </div>
     </article>
     <footer>
-        <div class="last">
-        <div class="logo">동국제강</div>
-        <div class="1">이용약관</div>
-        <div class="2">개인정보처리방침</div>
-        <div class="3">이메일무단수집거부</div>
-        <div class="4">사이트맵</div>
-        <div class="sns">
-        <button type="button" class="insta">
-            insta
-        </button>
-        <button type="button" class="facebook">
-            facebook
-        </button>
-        <button type="button" class="youtube">
-            youtube
-        </button>
-        <button type="button" class="blog">
-            blog
-        </button>
-        </div>
-        <div class="box">
-            <button type="button" class="accompany">
+        <div class="one">
+            <div class="logo">
+                동국제강
+            </div>
+            <div class="info">
+                <div class="aa">
+                    이용약관
+                </div>
+                <div class="bb">
+                    개인정보처리방침
+                </div>
+                <div class="cc">
+                    이메일무단수집거부
+                </div>
+                <div class="dd">
+                    사이트맵
+                </div>
+            </div>
+            <div class="sns">
+                <div class="insta">
+                    insta
+                </div>
+                <div class="facebook">
+                    facebook
+                </div>
+                <div class="youtube">
+                    youtube
+                </div>
+                <div class="blog">
+                    blog
+                </div>
+            </div>
+            <div class="button">
+            <button type="button" class="a">
                 동반성장
             </button>
-            <button type="button" class="family">
-                패밀리 사이트
+            <button type="button" class="b">
+                패밀리사이트
             </button>
         </div>
         </div>
-        <div class="adress">
-            서울 특별시 중구 을지로 5길 19 페럼타워, TEL 02 317 1114
-        </div>
-        <div class="COPYRIGHT">
-            COPYRIGHT@2019 DONGKUKSTEEL MILL CO., LTD ALL RIGHTS RESERVED.
+        <div class="two">
+            <div class="adress">
+                서울 특별시 중구 을지로 5길 19 페럼타워, TEL 02 317 1114
+            </div>
+            <div class="copyright">
+                COPYRIGHT@2019 DONGKUKSTEEL MILL CO.,LTD ALL RIGHTS RESERVED.
+            </div>
         </div>
     </footer>
-</body>
-</html>
+
+</body></html>
