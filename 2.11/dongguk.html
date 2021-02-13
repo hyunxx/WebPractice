@@ -2,28 +2,35 @@
 <html>
 <head>
     <meta charset="utf-8">
+    
     <style>
+        @import url(http://fonts.googleapis.com/earlyaccess/notosanssc.css);
+
         header,img,ul,li,button,section,h1,div,p,br,article,footer,body {
         margin: 0;
 	    padding: 0;
 	    border: 0;
 	    font-size: 100%;
-	    font: inherit;
+	    font-family: 'Noto Sans KR', sans-serif;
 	    vertical-align: baseline;
         }
+        body { }
+        
         a {text-decoration: none;
             color: black;}
         ul {list-style: none;}
         header {
             width: 100%;
             height: 70px;
+            top:0;
+            left:0; right:0;
             position: fixed;
             font-size: 20px;
             border: 1px solid black;
             padding:5px;
             line-height: 70px;
         }
-        h1 { 
+        /* h1 { 
             font-weight: bold;
             float: left;
             margin: 0 500px 0 50px;
@@ -45,13 +52,13 @@
         header .eng {
             font-size: 0.9em;
             color: grey;
-        }
+        } 
         .bus {
             width:150px;
             margin:0 10px;
             background-color: gray;
             color:white;
-        }
+        }*/
         .nav_wrap {
             width: 100%;
             height: 380px;
@@ -196,30 +203,58 @@
        
         
 
+    header  {background:#fff; z-index:1; }
+    header h1 {position: absolute; left:0; top:0; bottom:0; background:red;;}
+    header .n_gnb {width:900px; margin:0 auto; overflow:hidden;}
+    header .n_gnb div {float:left; width: 16.6%}
+    header .right_box {position: absolute; right:0; top:0; bottom:0;;}
+    header .right_box button {height:100%;}
 
-
+     .root_wrap {padding-top:82px;}
+    .visual_container {position:relative; height:335px; background: #ddd;}
+    .visual_container::after {display:block; position:absolute; bottom:60px; left:0; right:0; border-top:1px solid white; content:" "; background: red;}
+    .visual_container .title {width: 1100px; margin:0 auto; height:275px;}
+    .visual_container .navigation {width: 1100px; margin:0 auto;  height:60px; }
+    .visual_container .navigation div {float:left; height:60px; line-height: 60px; border-right:1px solid white}
+    .visual_container .navigation div:first-child {border-left:1px solid white}
+    .contents {width:1100px; margin:80px auto 150px;}
+    .tab_box {
+        display: flex;
+        height: 40px;
+        border:1px solid #dddddd}
+    .tab_box a {
+        flex-grow: 1;
+        text-align: center;
+    }
+    .tab_box a.on {
+        background: blue;
+        color: white;
+    }
     </style>
 </head>
 <body>
+<div class="root_wrap">
     <header>
-        <nav class="gnb">
-            <h1>동국제강</h1>
-            <div class="one">회사소개</div>
-            <div class="two">제품</div>
-            <div class="three">투자정보</div>
-            <div class="four">지속가능경영</div>
-            <div class="five">인재경영</div>
-            <div class="six">홍보센터</div>
-            <button type="button" class="bus">BUSINESS</button>
-            <button type="button" class="eng">eng</button>
+        <h1>동국제강</h1>
+        <nav class="n_gnb">
+            <div>회사소개</div>
+            <div>제품</div>
+            <div>투자정보</div>
+            <div>지속가능경영</div>
+            <div>인재경영</div>
+            <div>홍보센터</div>
         </nav>
+        <div class="right_box">
+            <button type="button" class="eng">eng</button>
+            <button type="button" class="bus">BUSINESS</button>
+        </div>
     </header>
-    <div class="nav_wrap">
-        <div class="nav_one">
+    <div class="visual_container">
+        <div class="title">
             <h2>CEO</h2>
             <P>CEO</P>
         </div>
-        <div class="nav_two">
+        <div class="navigation">
             <div class="home">
                 home
             </div>
@@ -232,47 +267,46 @@
         </div>
     </div>
 
-    </section>
-    <section class="info">
-        <div class="chairman">
-            장세주 회장
-        </div>
-        <div class="a_vice_chairman">
+    <div class="contents">
+        <section class="tab_box">
+            <a class="on">
+                장세주 회장
+            </a>
             <a href="http://www.dongkuk.com/ko/company/ceo2">
             장세욱 부회장
             </a>
+        </section>
+        <section class="image">
+            <img src="http://www.dongkuk.com/assets/ko/images/company/ceo1.jpg">
+        </section>
+        <div class="wrap">
+        <section class="left">
+            <p class="first">
+                지난 66년간 동국제강은 민간 최초 철강기업으로서
+                <br> 국가산업의 근본이 된다는 자부심으로
+                <br> 철강종가의 명맥을 지켜왔습니다.
+            </p>
+            <p class="second">
+                국토 재건에 필수적이었던 와이어로드의 국내 최초 생산을 시작으로 민간 최초 
+                <br>고로를 가동했습니다. 이어 선제적인 기술투자로 전기로 시대를 여는 주역이
+                <br> 되었고 최초의 냉간압연강판, 후판, 전기아연도금강판, 컬러강판을 생산했습니다.
+            </p>
+        </section>
+        <section class="right">
+            <p class="third">
+                이처럼 수많은 '처음'을 만들었던 것은 업에 대한 열정과 실패를 두려워하지 않는 도전
+                <br> 정신이 있었기 때문입니다. 부산 용호동 앞바다를 메웠던 열정은 전세계로 뻗어나가며
+                <br> 브라질 CSP 제철소의 도전으로 확장되고 있습니다.
+            </p>
+            <p class="fourth">
+                지금까지의 역사가 그랬듯 동국제강은 앞으로도 최고의 '퍼스트 무버'로서 나아갈
+                <br> 것입니다. 66년의 저력을 믿고 현재의 지혜를 모으며 100년의 앞을 보겠습니다.
+            </p>
+            <div class="name">
+            동국제강 회장 장세주
+            </div>
+        </section>
         </div>
-    </section>
-    <section class="image">
-         <img src="http://www.dongkuk.com/assets/ko/images/company/ceo1.jpg">
-    </section>
-    <div class="wrap">
-    <section class="left">
-        <p class="first">
-            지난 66년간 동국제강은 민간 최초 철강기업으로서
-            <br> 국가산업의 근본이 된다는 자부심으로
-            <br> 철강종가의 명맥을 지켜왔습니다.
-        </p>
-        <p class="second">
-            국토 재건에 필수적이었던 와이어로드의 국내 최초 생산을 시작으로 민간 최초 
-            <br>고로를 가동했습니다. 이어 선제적인 기술투자로 전기로 시대를 여는 주역이
-            <br> 되었고 최초의 냉간압연강판, 후판, 전기아연도금강판, 컬러강판을 생산했습니다.
-        </p>
-    </section>
-    <section class="right">
-        <p class="third">
-            이처럼 수많은 '처음'을 만들었던 것은 업에 대한 열정과 실패를 두려워하지 않는 도전
-            <br> 정신이 있었기 때문입니다. 부산 용호동 앞바다를 메웠던 열정은 전세계로 뻗어나가며
-            <br> 브라질 CSP 제철소의 도전으로 확장되고 있습니다.
-        </p>
-        <p class="fourth">
-            지금까지의 역사가 그랬듯 동국제강은 앞으로도 최고의 '퍼스트 무버'로서 나아갈
-            <br> 것입니다. 66년의 저력을 믿고 현재의 지혜를 모으며 100년의 앞을 보겠습니다.
-        </p>
-        <div class="name">
-        동국제강 회장 장세주
-        </div>
-    </section>
     </div>
     <article class="bottom">
         <div class="video">
@@ -339,5 +373,6 @@
             </div>
         </div>
     </footer>
+</div>
 </body>
 </html>
