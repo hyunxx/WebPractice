@@ -1,0 +1,227 @@
+
+        @import url(http://fonts.googleapis.com/earlyaccess/notosanssc.css);
+
+        header,img,ul,li,button,section,h1,div,p,br,article,footer,body {
+        margin: 0;
+	    padding: 0;
+	    border: 0;
+	    font-size: 100%;
+	    font-family: 'Noto Sans KR', sans-serif;
+	    vertical-align: baseline;
+        }
+        body { }
+        
+        a {text-decoration: none;
+            color: black;}
+        ul {list-style: none;}
+        header {
+            width: 100%;
+            height: 70px;
+            top:0;
+            left:0; right:0;
+            position: fixed;
+            font-size: 20px;
+            border: 1px solid black;
+            padding:5px;
+            line-height: 70px;
+        }
+        /* h1 { 
+            font-weight: bold;
+            float: left;
+            margin: 0 500px 0 50px;
+            }
+        header div {
+            margin: 0 auto;
+            float: left;
+            margin-right: 20px;
+        }
+        header button {
+            float:right;
+            background-color: white;
+        }
+        header .bus {
+            background-color: gray;
+            width: 150px;
+            margin: 0 20px;
+        }
+        header .eng {
+            font-size: 0.9em;
+            color: grey;
+        } 
+        .bus {
+            width:150px;
+            margin:0 10px;
+            background-color: gray;
+            color:white;
+        }*/
+        .nav_wrap {
+            width: 100%;
+            height: 380px;
+            border: 1px solid black;
+            box-sizing: border-box;
+            margin-bottom: 35px;
+        }
+        .nav_wrap .nav_one {
+            text-align: center;
+            margin: 180px 0 0 0;
+        }
+        .nav_wrap .nav_two {
+            width: 100%;
+            height: 80px;
+            overflow: hidden;
+            border: 1px solid black;
+            box-sizing: border-box;
+            position: absolute;
+            top: 300px;
+
+        }
+        .nav_wrap .nav_two div {
+            width: 100px;
+            height: 100px;
+            border-right: 1px solid black;
+            text-align: center;
+            display: inline-block
+        }
+        .nav_two .home {
+             padding: 10px;
+             margin: 0 0 0 100px;
+             border-left: 1px solid black;   
+        }
+        .nav_two .introduce, .name {
+            margin:0;
+            padding-right: 60px;
+        }
+        .info {
+            width: 1100px;
+            height: 60px;
+            overflow:hidden;
+            margin: 0 auto;
+            border:1px solid black;
+            text-align: center;
+            line-height: 60px;
+            margin-bottom: 50px;
+        }
+        .info .chairman {
+            float: left;
+            width: 50%;
+            height: 60px;
+            border-right: 1px solid black;
+            color: white;
+            font-style: bold;
+            background-color: blue;
+            
+        }
+        .image {
+            width: 1100px;
+            margin: 0 auto 70px;
+            }
+        .wrap {
+            overflow:hidden;
+            width: 1100px;
+            height: 350px; 
+            margin: 0 auto 80px;
+        }
+        .wrap .left {
+            float:left;
+        }
+        .first {
+            font-size: 1.4em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .right .name {
+            float: right;
+            margin-right: 5px;
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+        .bottom {
+            width: 100%;
+            height: 200px;
+            border: 1px solid black;
+            overflow: hidden;
+            box-sizing: border-box;
+            line-height: 200px ;
+            
+        }
+        .bottom button {
+            background-color: white;
+        }
+        .bottom .video {
+            float: left;
+            width: 50%;
+            height: 200px;
+            border-right: 1px solid black;
+            margin-right: 20px;
+            text-align: right;
+            padding-right: 20px;
+        }
+        footer {
+            width: 100%;
+            height: 180px;
+            background-color: rgb(56, 55, 55);
+        }
+        footer .one {
+            overflow: hidden;
+            width:1000px;
+            margin: 0 auto 20px; 
+        }
+        footer .one div {
+            float:left;
+            margin: 10px 10px 10px 0;
+        }
+        footer .logo {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: white;
+        }
+        
+        footer .info, .sns, .button {
+            color:rgb(207, 204, 204);
+        }
+        footer .sns {
+            margin-right: 5px;
+        }
+        footer .button {
+            background-color: rgb(56, 55, 55); 
+            border:1px solid rgb(207, 204, 204);
+            padding: 10px;
+        }
+        footer .button .a {
+            border-right: 1px solid rgb(207, 204, 204);
+
+        }
+        footer .two {
+            color: rgb(207, 204, 204);
+            margin-left: 450px;
+        }
+       
+        
+
+    header  {background:#fff; z-index:1; }
+    header h1 {position: absolute; left:0; top:0; bottom:0; background:red;;}
+    header .n_gnb {width:900px; margin:0 auto; overflow:hidden;}
+    header .n_gnb div {float:left; width: 16.6%}
+    header .right_box {position: absolute; right:0; top:0; bottom:0;;}
+    header .right_box button {height:100%;}
+
+     .root_wrap {padding-top:82px;}
+    .visual_container {position:relative; height:335px; background:url('http://www.dongkuk.com/assets/ko/images/ir/visual.jpg') no-repeat center 0;}
+    .visual_container::after {display:block; position:absolute; bottom:60px; left:0; right:0; border-top:1px solid white; content:" "; background: red;}
+    .visual_container .title {width: 1100px; margin:0 auto; height:275px;}
+    .visual_container .navigation {width: 1100px; margin:0 auto;  height:60px; }
+    .visual_container .navigation div {float:left; height:60px; line-height: 60px; border-right:1px solid white}
+    .visual_container .navigation div:first-child {border-left:1px solid white}
+    .contents {width:1100px; margin:80px auto 150px;}
+    .tab_box {
+        display: flex;
+        height: 40px;
+        border:1px solid #dddddd}
+    .tab_box a {
+        flex-grow: 1;
+        text-align: center;
+    }
+    .tab_box a.on {
+        background: blue;
+        color: white;
+    }
