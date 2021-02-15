@@ -74,7 +74,7 @@ header .right_box button {height:100%; margin-right: 20px;}
     position: relative;
     }
 .visual_container h3 { 
-    font-size: 1.4em;
+    font-size: 1.8em;
     font-weight: bold;
     line-height: 275px;
 }
@@ -84,6 +84,7 @@ header .right_box button {height:100%; margin-right: 20px;}
     margin-top: 20px;
     left:0;
     right: 0;
+
 } 
 .visual_container .navigation {
     width: 1100px; 
@@ -141,7 +142,7 @@ header .right_box button {height:100%; margin-right: 20px;}
     text-align: center;
 }
 .networkmap_wrap .infotext {margin-left: 20px;}
-.title {
+.networkmap_wrap .title {
     position:absolute;
     top: 50%;
     left: 4%;
