@@ -1,0 +1,27 @@
+<!-- === 사용하기
+undefined > 값이 정의 되지 않음 
+null > 값이 없음-->
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+    <script>
+        alert (undefined == null); //>값이 나타나지 않으므로 true
+        alert (undefined === null); //> 값이 나타나지 않더라도 서로의 형식이 다르므로 false
+        //true false > boolean NaN >숫자가 없는 상태
+        alert(null == undefined);       //true
+        alert(null === undefined);      //false
+        alert(true == 1);               //true true의 기본값 1
+        alert(true === 1);              //false
+        alert(true == '1');             //true
+        alert(true === '1');            //false
+        
+        alert(0 === -0);                //true
+        alert(NaN === NaN);             //false
+        //!> 부정 >= =<
+        alert (1!=2); //true
+    </script>
+</body>
+</html>

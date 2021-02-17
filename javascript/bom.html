@@ -1,0 +1,17 @@
+<!-- alert > 경고창이나 디버깅에 사용, 확인 하기 전까지 다음으로 넘어가지 않음
+console.log>?
+confirm-->
+<!DOCTYPE html>
+<body>
+    <input type="button" value="confirm" onclick="func_confirm()">
+    <script>
+        function func_confirm(){
+            if(confirm ('ok?')){
+                alert('ok!');
+            }
+            else {
+                alert ('cancel');S
+            }
+        }
+    </script>
+</body>

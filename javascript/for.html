@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+    <script type="text/javascript">
+        /*
+        //while > 조건 true에서 false 될 때까지 반복
+        var i=0; //기준점의 역할 0부터 카운트
+        while(i <= 11) {
+        document.write ("Hello World! <br />");
+        i = i+2 ;
+        } //멈추지 않으면 문제가 생김 무한루프 진행
+        i+1 = i++*/
+        
+        /*for(var i =0; i<=11; i= i+2) {
+            document.write ("Hello World! <br />");
+            i = i+2 ;
+        }
+        초기화> 변수, 조건값, 실행조건 순서로 나열 세미콜론으로 나눔 끝에는 세미콜론 x*/
+        for (var i=0; i<=10; i++) {
+            if(i === 5) {
+                break; //현재 반복문 중지 if 와 for는 서로에게 속할 수 있음
+            } //continue 는 그 순간에만 종료
+            document.write ("Heelo world!"+i+"<br />");
+        }
+</script>
+</body>
+</html>
