@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <script>
+        var grades = {
+            'list' : {'hyun': 10, 'young': 11},
+            //안에 여러 객체를 담을 수 있고 함수도 해당됨
+            'show' : function(){
+                for(var name in this.list)
+                console.log(name, this.list[name]);
+            }
+        };
+        grades.show();
+        //???
+    </script>
+</body> 
+</html> 

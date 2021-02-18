@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+</head>
+<body>
+    <script>
+        var vscope = 'global'; //전역변수
+        function fscope(){
+            var vscope='local';
+            var lv= 'local varilables'; //함수 밖에서 alert 한다면 undefined로 실행됨 (var이 있을 경우)
+            alert(vscope); //지역 변수 (함수 안 변수)가 우선 적용됨
+        } //특별한 경우가 아니면 대체로 지역변수로 사용
+        fscope();
+    </script>
+</body>
+</html>
