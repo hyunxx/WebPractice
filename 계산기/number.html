@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .wrapnumber {
+            width: 440px;
+            font-size: 50px;
+            background-color: antiquewhite;}
+        div {overflow: hidden;}
+        div button {
+            width:100px;
+            height: 100px;
+            border-radius: 10px;
+            box-sizing: border-box;
+            margin: 5px;
+            padding: 0;
+            display: block;
+            float:left;
+         }
+         .output {
+             border: 2px solid rgb(255, 208, 0);
+             width: 400px;
+             height: 150px;
+             margin: 0 auto;
+
+         }
+         #resultbox { 
+             border: 2px solid rgb(255, 208, 0);
+             width: 400px;
+             height: 100px;
+             margin: 0 auto 10px;
+         }
+         .zero {width: 210px;}
+    </style>
+</head>
+<body>
+    <div class="wrapnumber">
+    <div class="output" id="dashboard">
+        
+    </div>
+    <div id="resultbox">
+
+    </div>
+    
+    <div class="firstline">
+        <button type="button" onclick="onReset()">AC</button>
+        <button type="button" onclick="onPlus()">+</button>
+        <button type="button" onclick="onPercent()">%</button>
+        <button type="button" onclick="onDivision()">÷</button>
+    </div>
+    <div class="secondline">
+        <button type="button" onclick="show_number(7)">7</button>
+        <button type="button" onclick="show_number(8)">8</button>
+        <button type="button" onclick="show_number(9)">9</button>
+        <button type="button" onclick="onMulti()">X</button>
+    </div>
+    <div class="thirdline">
+        <button type="button" onclick="show_number(4)">4</button>
+        <button type="button" onclick="show_number(5)">5</button>
+        <button type="button" onclick="show_number(6)">6</button>
+        <button type="button" onclick="onMinus()">-</button>
+    </div>
+    <div class="fourthline">
+        <button type="button" onclick="show_number(1)">1</button>
+        <button type="button" onclick="show_number(2)">2</button>
+        <button type="button"  onclick="show_number(3)">3</button>
+        <button type="button" onclick="onPlus()">+</button>
+    </div>
+    <div class="lastline">
+        <button type="button" class="zero" onclick="show_number(0)">0</button>
+        <button type="button" onclick="onComma()">.</button>
+        <button type="button" onclick="onResult()">=</button>
+    </div>
+    </div>
+    <script>
+    </script>
+</body>
+</html>
