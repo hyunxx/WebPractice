@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+</head>
+<body>
+<script>
+    var h={}
+    var s={}
+    function func() {
+        switch(this){ //switch 는 if문의 대체제 > this의 값은 window
+            case h: //this는 객체 지정
+                document.write ('hyun <br />');
+                break;
+            case s:
+                document.write ('zzang <br />');
+                break;
+            case window:
+                document.write ('window <br />');
+                break;
+        }
+    }
+    func(); //this의 기본값이 window이므로 window가 먼저 실행
+    func.apply(h); //switch case의 경우 함수 실행시 apply를 통해 case 지정
+    func.apply(s);
+    /*function sum (x,y){return x+y;}
+    sum(2,5) //결과값 7*/
+
+</script>
+</body>
+</html>
