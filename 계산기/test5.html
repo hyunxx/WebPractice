@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>자바스크립트 연습장</h2>
+<p id="demo"></p>
+</body>
+<script>
+    var n =Number(prompt('숫자를 입력해주세요'));
+    for(i=2; i<n; i++) {
+        if(n % i === 0) {
+            document.write(n + ' 은 소수가 아닙니다.');
+        } else {
+            document.write(n + ' 은 소수입니다.');
+        }
+        break;
+    }
+</script>
+</html>

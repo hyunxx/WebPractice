@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>자바스크립트 연습장</h2>
+<p id="demo"></p>
+</body>
+<script>
+    var sum = 0;
+    var m   = -1;
+    var num = prompt('숫자를 입력해 주세요')
+    var num2 = Number(num);
+    while(num != 0) {
+        sum += num2;
+        m++;
+        console.log(m , num2 , sum);
+    }
+    document.write('입력한 수의 값은 ' + sum)
+</script>
+</html>
