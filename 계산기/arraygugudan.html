@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+</body>
+<h1>구구단 전체 출력</h1>
+<script>
+   var results = [];
+   for ( var i = 2; i <= 9; i++) {
+       for( var j = 1; i <= 9; i++) {
+           results[j] = i*j;
+       }
+       for (var j = 1; j <= 9; j++) {
+           //document.write(i + "x" + j + "=" + i*j + "<br />");
+           var str= "";
+           str += i;
+           str += "x";
+           str += j;
+           str += "=";
+           str += results [j];
+           str += "<br />";
+           document.write(str);
+       }
+   }
+</script>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+</body>
+출력할 단수: <input type="text" id="textbox">
+<button onclick="rungugudan()">확인</button>
+<script>
+    function rungugudan() {
+        var d = document.getElementById('textbox').value;
+        var a = Number(d);
+        var c= document.write(a + '단 출력 <br />');
+        for (b= 1; b< 10; b++) {
+        console.log(a*b);
+        document.write(a + "x" + b + "=" + a*b + "<br />");
+        }
+    }
+</script>
+</html>

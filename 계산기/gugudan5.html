@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+</body>
+<script>
+    var n = prompt('몇단을 출력할까요?');
+    var a = Number(n);
+    if( a < 2 || a>=10 ) {
+        document.write('해당하지 않는 값입니다.');
+    } else {
+        document.write( '<h2>'+ a + '단 출력 <br /> </h2>');
+        for(var b=1; b< 10; b++) {
+            console.log(a*b);
+            document.write(a + "x" + b + "=" + a*b +'<br />');
+        }
+    } 
+</script> 
+</html>

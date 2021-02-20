@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+</body>
+<h1>문자열 계산기 만들기</h1>
+<div id="output"></div>
+<script>
+function main() {
+    console.log("calculator")
+    var out = document.getElementById("output");
+    var start ="";
+    start += "<h2> 계산기 구현하기 </h2>";
+    
+    var n1 = Number(prompt('첫번째 값을 입력해주세요'));
+    var n2 = Number(prompt('첫번째 값을 입력해주세요'));
+    start += "더하기" + n1 + n2 + "<br />";
+    start += "빼기" + n1 - n2 + "<br />";
+    start += "곱하기" + n1 * n2 + "<br />";
+    start += "나누기" + n1 / n2 + "<br />";
+    out.innerHTML = start;
+}
+main();
+</script>
+</html>
