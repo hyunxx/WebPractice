@@ -6,7 +6,7 @@
 <body>
     <h1>계산 출력하기</h1>
     <div>
-        <input type="text" id="input"><br />
+        <input type="text" id="input" /><br />
         <button onclick="calc()">확인</button>
     </div>
     <div id="output">결과가 여기에 나옵니다.</div>
@@ -14,6 +14,9 @@
     input = [];
     input.init = function(str) {
     this.list = str.split('');
+    }
+    input.empty = function() {
+        return this.list.length === 0;
     }
     input.getFirstValue = function() {
         var cal1 = this.list.shift();
@@ -31,22 +34,15 @@
     calculator = {};
     calculator.calculate = function(first, second, op) {
         var ret;
-        switch(op) {
-            case "+":
+        if(op === '+') {
             ret = first + second;
-            break;
-            case "-":
-            ret = first - second;
-            break;
-            case "*":
+        } else if(op === '-') {
+            ret = first - second; 
+        } else if(op === '*') {
             ret = first * second;
-            break;
-            case "/":
+        } else if(op === '/') {
             ret = first / second;
-            break;
-            default:
-            return NaN;
-        }
+        } else {return NaN;}
         return ret;
     }
     var output = {};
@@ -59,11 +55,12 @@
         var str = document.getElementById('input').value;
         input.init(str);
         var result = input.getFirstValue();
-        while(true) {
+        while(!input.empty()) {
             var op = input.getOperator();
             var second = input.getFirstValue();
             result = calculator.calculate(result, second, op);
         }
+        output.print();
     };
     
 //     function main() {
