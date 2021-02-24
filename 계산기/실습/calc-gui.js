@@ -77,12 +77,15 @@ var num = function(event) {
     console.log(input.getInput());
 
     if(str === 'bs') {
-        nput.array.pop();
+        input.array.pop();
     } else if( str === '+' || str === '-' || str === '*' || str === '/' ) {
         input.array.push(' ' + str + ' ');
+    } else if(str === 'c') {
+        output.text.innerHTML = "0";
     } else { 
         input.array.push(str);
     }
+    //BS구현
     if (input.empty()) {
         output.text.innerHTML = "0";
     } else {
