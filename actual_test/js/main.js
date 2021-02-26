@@ -1,4 +1,4 @@
-
+const backToTop = document.getElementById('backtotop');
 
 const checkScroll = () => {
     let pageYOffset = window.pageYOffset;

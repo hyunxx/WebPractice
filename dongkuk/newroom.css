@@ -94,10 +94,6 @@
             border-right:1px solid white
         }
         .visual_container .navigation div:first-child {border-left:1px solid white;}
-        .contents {
-            width:1100px; 
-            margin:80px auto 150px;
-        }
         .navigation .introduce, .name {
             padding-right: 50px;
         }

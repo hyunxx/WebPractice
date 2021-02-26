@@ -6,20 +6,22 @@
 <script>
    var results = [];
    for ( var i = 2; i <= 9; i++) {
-       for( var j = 1; i <= 9; i++) {
+       if(i%2 === 0){
+       for( var j = 1; j <= 9; j++) {
            results[j] = i*j;
+           document.write(i + "x" + j + "=" + results[j] + "<br />");
+           } 
+        } else {
+               console.log ('홀수입니다.')
        }
-       for (var j = 1; j <= 9; j++) {
-           //document.write(i + "x" + j + "=" + i*j + "<br />");
-           var str= "";
+           /*var str= "";
            str += i;
            str += "x";
            str += j;
            str += "=";
-           str += results [j];
+           str += results[j];
            str += "<br />";
-           document.write(str);
+           document.write(str);*/
        }
-   }
 </script>
 </html>
