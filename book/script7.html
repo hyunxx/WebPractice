@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    let number = prompt('입장객 수를 입력해주세요');
+    let number2 = prompt('한 줄에 몇명씩 앉습니까?');
+    if(number % number2 === 0) {
+        rowNum = parseInt(number / number2);
+    } else {
+        rowNum = parseInt(number / number2 + 1); 
+    }
+    document.write('총 ' + rowNum + ' 줄이 필요합니다');
+</script>
+</body>
+</html>
