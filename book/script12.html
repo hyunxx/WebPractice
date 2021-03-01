@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>4의 배수일까 아닐까</h1>
+<script>
+var num = Number(prompt("숫자를 입력하세요"));
+if(num !== null) {
+if(num % 3 === 0) {
+    for(var i = 0; i < num; i+3) {
+        document.write(i + "<br />");
+        document.write(num + "까지의 3의 배수의 개수: " + (num / 3) + "개");
+    }
+} else {
+    document.write(num + " 은 3의 배수가 아닙니다.");
+}
+} else {
+    document.write("입력이 취소되었습니다.");
+}
+
+</script> 
+</body>
+</html>

@@ -5,6 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        table,td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        td {
+            padding: 5px;
+            font-size: 0.9em;
+        }
+    </style>
 </head>
 <body>
 <script>
@@ -13,9 +23,19 @@
     if(number % number2 === 0) {
         rowNum = parseInt(number / number2);
     } else {
-        rowNum = parseInt(number / number2 + 1); 
+        rowNum = parseInt(number / number2) +1; 
     }
-    document.write('총 ' + rowNum + ' 줄이 필요합니다');
+    document.write("<table>")
+    for(var i = 0; i < rowNum; i++) {
+        document.write("<tr>")
+        for(var j = 1; j <= number2; j++) {
+            seatNo = i * number2 + j; 
+            if(seatNo > number2) break;
+            document.write("<td>좌석" + seatNo + " </td>");
+        }
+        document.write("<tr />");
+    }
+    document.write("</table>");
 </script>
 </body>
 </html>

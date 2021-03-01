@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>살아온 날 수 구하기</h1>
+<form>
+    생년월일: year : <input id="b_year" placeholder="년도를 입력해주세요" />
+    month : <input id="b_month" placeholder="월을 입력해주세요" />
+    day : <input id="b_day" placeholder="일을 입력해주세요"/>
+    <button type="button" onclick="calculbirth()">계산하기</button><br />
+    살아온 날 수: <p id="result_cal"></p>
+</form>
+<script>
+function calculbirth() {
+    let today = new Date();
+    let year = parseInt(document.getElementById('b_year').value);
+    let month = parseInt(document.getElementById('b_month').value);
+    let day = parseInt(document.getElementById('b_day').value);
+    console.log(year, typeof year);
+    let mybirth = new Date();
+    mybirth.setFullYear(year, month, day);
+    day1 = Date.parse(today);
+    day2 = Date.parse(mybirth);
+    console.log(day1);
+    console.log(day2);
+    calculday = day1 - day2;
+    result = calculday / 1000 / 60 / 60 / 24;
+    document.getElementById('result_cal').innerHTML = result;
+}
+</script>   
+</body>
+</html>
